@@ -2,8 +2,8 @@ import ToDo from './ToDo'
 
 function List(){
     return(
-        <div>
-            <h2>Today</h2>
+        <div id="list-container">
+            <h2 class="list-title">Today</h2>
             <ToDo />
         </div>
 
