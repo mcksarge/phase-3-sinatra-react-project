@@ -1,10 +1,10 @@
-import Item from './Item'
+import Task from './Task'
 
 function ToDo(){
     return (
         <div>
             <ul>
-                <Item />
+                <Task />
             </ul>
         </div>
     )
