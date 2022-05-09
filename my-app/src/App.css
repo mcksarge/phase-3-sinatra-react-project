@@ -12,3 +12,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+#list-container {
+  width: 600px;
+}
+
+.list-title {
+  background-color: #F66B0E;
+}
+
+#task-list {
+  width: 50%;
+  margin: auto;
+}
