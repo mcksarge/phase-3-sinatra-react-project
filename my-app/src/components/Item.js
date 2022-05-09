@@ -1,7 +1,7 @@
 
 
 function Item(){
-    let array = ["Do chores", "Pick up mail", "Wash Dishes"]
+    let array = ["Do chores", "Pick up mail", "Wash Dishes", "Clean car", "Ice my feet"]
 
     let list = array.map((task) =>
         <div>
