@@ -13,15 +13,24 @@
   color: white;
 }
 
+ul {
+  list-style: none;
+}
+
 #list-container {
   width: 600px;
 }
 
 .list-title {
   background-color: #F66B0E;
+  border-radius: 20px;
 }
 
 #task-list {
   width: 50%;
   margin: auto;
+}
+
+button {
+  margin-right: 10px;
 }
