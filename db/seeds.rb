@@ -1,7 +1,8 @@
 puts "🌱 Seeding spices..."
 
-    Priority.create([{name: "Emergency", timeframe: "1 hour"}{name: "High", timeframe: "3 hours"}, {name: "Medium", timeframe: "6 hours"}, {name: "Low", timeframe: "24 hours"}])
-    Category.create([{name: "Yard work"}, {name: "House work"}, {name: "Errands"}])
-    Task.create([{name: "Take out trash", priority: 1, category: 2}, {name: "Pull weeds", priority: 3, category: 1}, {name: "Buy groceries", priority: 4, category: 3}])
+    Category.create([{name: "House Work"}, {name: "Yard Work"}, {name: "Errands"}, {name: "Shopping"}])
+    Person.create([{name: "Shane"}, {name: "Amy"}, {name: "Nick"}])
+    Task.create([{name: "Take out trash", category_id: 1, person_id: 3}, {name: "Pull weeds", category_id: 2, person_id: 1}, {name: "Buy groceries", category_id: 4, person_id: 2}, {name: "Drop off mail", category_id: 3, person_id: 2}])
+    
 
 puts "✅ Done seeding!"
