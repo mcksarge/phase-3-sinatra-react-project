@@ -25,6 +25,7 @@ class ApplicationController < Sinatra::Base
     task = Task.create(
       name: params[:name]
     )
+    task.to_json
   end
 
   delete "/tasks/:id" do
