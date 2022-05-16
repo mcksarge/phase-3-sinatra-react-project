@@ -35,6 +35,13 @@ class ApplicationController < Sinatra::Base
     task.to_json
   end
 
+  patch "/tasks/:id" do
+    task = Task.update(
+      person_id: params[:person_id]
+    )
+    task.to_json
+  end
+
   get "/categories" do
     categories = Category.all
     categories.to_json
