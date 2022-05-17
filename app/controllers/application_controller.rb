@@ -24,7 +24,8 @@ class ApplicationController < Sinatra::Base
   post "/tasks" do
     task = Task.create(
       name: params[:name],
-      category_id: params[:category]
+      category_id: params[:category],
+      person_id: params[:person]
     )
     task.to_json
   end
@@ -36,7 +37,8 @@ class ApplicationController < Sinatra::Base
   end
 
   patch "/tasks/:id" do
-    task = Task.update(
+    task = Task.find(params[:id])
+    task.update(
       person_id: params[:person_id]
     )
     task.to_json
