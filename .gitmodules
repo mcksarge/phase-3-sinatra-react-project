@@ -1,0 +1,3 @@
+[submodule "my-app-frontend"]
+	path = my-app-frontend
+	url = git@github.com:mcksarge/my-app-frontend.git
