@@ -16,6 +16,19 @@ class ApplicationController < Sinatra::Base
     person.to_json
   end
 
+  post "/people" do
+    person = Person.create(
+      name: params[:name]
+    )
+    person.to_json
+  end
+
+  delete "/people/:id" do
+    person = Person.find(params[:id])
+    person.destroy
+    person.to_json
+  end
+
   get "/tasks" do
     tasks = Task.all
     tasks.to_json
