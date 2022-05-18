@@ -5,4 +5,8 @@ class Task < ActiveRecord::Base
     def self.sort_by_name
         Task.all.order(:name)
     end
+
+    def self.sort_by_date
+        Task.all.order(:created_at)
+    end
 end

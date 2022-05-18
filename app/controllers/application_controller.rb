@@ -57,6 +57,16 @@ class ApplicationController < Sinatra::Base
     task.to_json
   end
 
+  get "/tasks/alpha" do
+    task = Task.sort_by_name
+    task.to_json
+  end
+
+  get "/tasks/date" do
+    task = Task.sort_by_date
+    task.to_json
+  end
+
   get "/categories" do
     categories = Category.all
     categories.to_json
